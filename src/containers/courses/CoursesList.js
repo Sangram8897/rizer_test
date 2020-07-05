@@ -2,7 +2,7 @@ import React, { useReducer, useCallback, useState, useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { View, Text, FlatList } from 'react-native'
 import CoursesListItem from './CoursesListItem'
-import IsEmpty from '../../utils/IsEmpty'
+
 
 export default function CoursesList(props) {
 
