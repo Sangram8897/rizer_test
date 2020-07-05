@@ -1,17 +1,18 @@
-import React, { useEffect, useState } from 'react'
-import { View, Text } from 'react-native'
-import { Provider } from 'react-redux'
+import React from 'react'
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import store from '../store/store/configureStore';
-import SignIn from '../containers/auth/SignIn';
-import SignUp from '../containers/auth/SignUp';
-import Courses from '../containers/courses';
-import Auth from '../containers/auth';
-import { Colors } from 'react-native/Libraries/NewAppScreen';
-import Color from '../themes/Color';
-import Loading from '../containers/start/Loading';
-import ViewCourse from '../containers/courses/ViewCourse';
+
+import { Provider } from 'react-redux'
+import store from 'store/store/configureStore';
+
+import Color from 'themes/Color';
+
+import SignIn from 'containers/auth/SignIn';
+import SignUp from 'containers/auth/SignUp';
+import Courses from 'containers/courses';
+import Auth from 'containers/auth';
+import Loading from 'containers/start/Loading';
+import ViewCourse from 'containers/courses/ViewCourse';
 
 
 const Stack = createStackNavigator();

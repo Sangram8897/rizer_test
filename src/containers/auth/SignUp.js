@@ -1,11 +1,10 @@
 import React, { useReducer, useCallback } from 'react'
-import { useSelector, useDispatch } from 'react-redux';
-import { View, Text, TextInput, StyleSheet, Alert, TouchableOpacity } from 'react-native'
-import Button from '../../components/Button';
-import Input from '../../components/Input'
-import { ScrollView } from 'react-native-gesture-handler';
-import { sign_up_rizer } from '../../store/actions/AuthActions'
-import Color from '../../themes/Color';
+import { useDispatch } from 'react-redux';
+import { View, ScrollView, Text, TextInput, StyleSheet, Alert } from 'react-native'
+import Button from 'components/Button';
+import Input from 'components/Input'
+import { sign_up_rizer } from 'store/actions/AuthActions'
+import Color from 'themes/Color';
 const FORM_INPUT_UPDATE = 'FORM_INPUT_UPDATE'
 const FORM_STATE_CLEAR = 'FORM_STATE_CLEAR'
 

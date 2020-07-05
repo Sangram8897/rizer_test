@@ -1,7 +1,7 @@
 import React, {useState, useCallback, useEffect} from 'react';
 import {View, SafeAreaView, StyleSheet, ActivityIndicator} from 'react-native';
 
-import Color from '../themes/Color';
+import Color from 'themes/Color';
 
 const Container = props => {
   return (

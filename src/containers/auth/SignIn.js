@@ -2,11 +2,13 @@ import React, { useReducer, useCallback, useState, useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux';
 
 import { View, Text, TextInput, StyleSheet, ScrollView, Alert, Keyboard, TouchableOpacity } from 'react-native'
-import Button from '../../components/Button';
-import Input from '../../components/Input'
-import { sign_in_rizer } from '../../store/actions/AuthActions'
-import Container from '../../components/Container';
-import Color from '../../themes/Color';
+import Button from 'components/Button';
+import Input from 'components/Input'
+import Container from 'components/Container';
+
+import { sign_in_rizer } from 'store/actions/AuthActions'
+
+import Color from 'themes/Color';
 
 const FORM_INPUT_UPDATE = 'FORM_INPUT_UPDATE'
 const FORM_STATE_CLEAR = 'FORM_STATE_CLEAR'

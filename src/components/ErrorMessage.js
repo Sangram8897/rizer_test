@@ -1,7 +1,7 @@
 import React from 'react';
 import {View, Text} from 'react-native';
 
-import Color from '../themes/Color';
+import Color from 'themes/Color';
 
 const ErrorMessage = ({errorMessage, errorID}) => {
   return (

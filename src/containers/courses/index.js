@@ -1,11 +1,14 @@
-import React, { useReducer, useCallback, useState, useEffect } from 'react'
+import React, { useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux';
-import { View, Text, Button, Image } from 'react-native'
-import Container from '../../components/Container'
-import { get_all_institude_courses } from '../../store/actions/CoursesActions'
-import { sign_out_rizer } from '../../store/actions/AuthActions'
-import { TouchableOpacity } from 'react-native-gesture-handler';
+
+import { Text, Image,TouchableOpacity } from 'react-native'
+import Container from 'components/Container'
+
+import { get_all_institude_courses } from 'store/actions/CoursesActions'
+import { sign_out_rizer } from 'store/actions/AuthActions'
+
 import CoursesList from './CoursesList';
+
 export default function Courses(props) {
     const dispatch = useDispatch();
 
