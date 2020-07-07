@@ -1,6 +1,5 @@
 import { url } from 'config';
 import { getData } from 'api';
-import { errorHandler } from 'api/message';
 
 const NAME = 'COURSES';
 
@@ -27,8 +26,7 @@ export const get_all_institude_courses = data => {
       dispatch({ type: TAG.GETALL, payload: res.courses });
 
     } else {
-      errorHandler(result);
-      return false;
+            return false;
     }
   }
 };

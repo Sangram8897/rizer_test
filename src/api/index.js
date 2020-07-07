@@ -31,15 +31,7 @@ export const postData = (url, data, headers) => {
   }).then(response => {
     console.log(response);
     return response;
-  }).catch((err)=>{
-    Alert.alert(
-      'Error!',
-      err.message,
-      [{text: 'OK', onPress: () => console.log('OK Pressed')}],
-      {cancelable: false},
-    );
-    return err;
-  }); // parses response to JSON
+  })// parses response to JSON
 };
 
 export const putData = (url, data, headers) => {

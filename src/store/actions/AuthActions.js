@@ -1,6 +1,5 @@
 import { url } from 'config';
 import { postData } from 'api';
-import { errorHandler } from 'api/message';
 import AsyncStorage from '@react-native-community/async-storage';
 import jwt_decode from 'jwt-decode';
 
@@ -33,7 +32,6 @@ export const sign_in_rizer = (data, callback) => async dispatch => {
     callback();
   } else {
     dispatch({ type: TAG.FAIL });
-    errorHandler(result);
     return false;
   }
 };
@@ -60,7 +58,6 @@ export const sign_up_rizer = (data, callback) => async dispatch => {
   } 
   else {
     dispatch({ type: TAG.FAIL });
-    errorHandler(result);
     return false;
   }
 };
@@ -70,6 +67,7 @@ export const sign_out_rizer = callback => async dispatch => {
   await dispatch({ type: TAG.OUT });
   callback();
 }
+
 const clearStorage = async () => {
   try {
     await AsyncStorage.removeItem('@userData')
